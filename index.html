@@ -1,0 +1,2175 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trường Công nghệ Thông tin và Truyền thông - Đại học Bách khoa Hà Nội">
+    <title>
+      Trường Công nghệ Thông tin và Truyền thông - Đại học Bách khoa Hà Nội
+    </title>
+    <link rel="icon" type="image/svg+xml" href="assets/other/logo30nam.png">
+    <link rel="stylesheet" href="styles.css">
+    <style id="about-reference-styles">
+          #about.stats {
+            box-sizing: border-box;
+            padding: 35px 0 60px;
+            min-height: 407px;
+            background: #fcf9e2;
+            color: #0a0a0a;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+          }
+          #about .about-inner { width: min(1640px, 96%); margin: 0 auto; }
+          #about #about-heading {
+            margin: 0 0 59px;
+            padding: 0;
+            font: 400 32px/40px Arial, Helvetica, sans-serif;
+            letter-spacing: 1px;
+            color: #0a0a0a;
+          }
+          #about #about-heading::after { content: none; }
+          #about .about-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0; }
+          #about .about-item { padding: 0 8px; border: 0; background: none; box-shadow: none; }
+          #about .about-item h3 {
+            margin: 0 0 12px;
+            color: inherit;
+            font: 400 26px/32px Arial, Helvetica, sans-serif;
+            letter-spacing: 0;
+            text-transform: none;
+          }
+          #about .about-item strong {
+            display: block;
+            margin: 0;
+            color: inherit;
+            font: 700 44px/53px Arial, Helvetica, sans-serif;
+          }
+          #about .about-item p {
+            margin: 33px -18px 0;
+            color: inherit;
+            font: 400 18px/28px Arial, Helvetica, sans-serif;
+          }
+          @media (max-width: 1200px) {
+            #about .about-item h3 { font-size: 21px; }
+            #about .about-item strong { font-size: 38px; }
+            #about .about-item p { margin-inline: 0; font-size: 16px; }
+            #about .about-item p br { display: none; }
+          }
+          @media (max-width: 850px) {
+            #about .about-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 36px 20px; }
+            #about .about-item:last-child { grid-column: 1 / -1; }
+            #about #about-heading { margin-bottom: 40px; }
+            #about .about-item p { margin-top: 16px; }
+          }
+          @media (max-width: 480px) {
+            #about .about-grid { grid-template-columns: 1fr; }
+            #about #about-heading { font-size: 28px; }
+          }
+          #about.stats {
+            min-height: auto;
+            padding: 25px 0 35px;
+          }
+          #about .about-inner {
+            width: min(1230px, 96%);
+          }
+          #about #about-heading {
+            font-size: 26px;
+            line-height: 34px;
+            margin-bottom: 35px;
+          }
+          #about .about-item h3 {
+            font-size: 20px;
+            line-height: 26px;
+            margin-bottom: 8px;
+          }
+          #about .about-item strong {
+            font-size: 34px;
+            line-height: 42px;
+          }
+          #about .about-item p {
+            font-size: 14px;
+            line-height: 22px;
+            margin: 22px 0 0;
+          }
+          #about .about-item p br {
+            display: none;
+          }
+      
+          .reference-hero .hero-slide:not(:first-child) .confetti-layer {
+            display: none !important;
+          }
+        
+    </style>
+    <style id="header-reference-styles">
+      .reference-header, .reference-hero { font-family: Arial, Helvetica, sans-serif; }
+      .reference-header { background: #fff; }
+      .reference-header .reference-brandbar { width: min(1536px, calc(100% - 40px)); height: 125px; margin: auto; display: flex; align-items: center; gap: 40px; }
+      .reference-header .reference-logo { display: flex; width: 280px; flex: 0 0 280px; align-items: center; }
+      .reference-header .reference-logo img { display: block; width: 280px; height: 114px; object-fit: contain; }
+      .reference-header .reference-school { color: #080808; font-size: 24px; font-weight: 700; line-height: 32px; letter-spacing: .4px; flex: 1; }
+      .reference-header .reference-tools { width: 250px; flex: 0 0 250px; }
+      .reference-header .reference-flags { display: flex; justify-content: flex-end; align-items: center; gap: 25px; margin: 0 17px 11px 0; }
+      .reference-header .reference-flags img { display: block; height: 26px; width: auto; max-width: 43px; object-fit: contain; }
+      .reference-header .search-panel { position: static; display: flex; width: 100%; height: 38px; margin: 0; padding: 0; border: 1px solid #e4e4e4; border-radius: 22px; box-shadow: none; background: #fff; overflow: hidden; }
+      .reference-header .search-panel input { width: 0; min-width: 0; flex: 1; padding: 0 12px; border: 0; outline-offset: -3px; background: transparent; font: 16px Arial,sans-serif; }
+      .reference-header .search-toggle { display: grid; place-items: center; padding: 0 15px 0 6px; border: 0; color: #111; background: none; cursor: pointer; }
+      .reference-header .main-nav { border-top: 8px solid #c90000; background: #363636; box-shadow: none; }
+      .reference-header .nav-inner { width: min(1536px, calc(100% - 40px)); min-height: 50px; margin: auto; display: flex; flex-wrap: nowrap; align-items: stretch; }
+      .reference-header .nav-inner > a { min-height: 50px; display: flex; align-items: center; justify-content: center; gap: 7px; padding: 0 18px; border-left: 1px solid #505050; color: #fff; font: 400 18px/1.3 Arial,sans-serif; white-space: nowrap; }
+      .reference-header .nav-inner > a:last-child { border-right: 1px solid #505050; }
+      .reference-header .nav-inner > a::after { content: ''; width: 7px; height: 7px; border-right: 2px solid #999; border-bottom: 2px solid #999; transform: translateY(-2px) rotate(45deg); }
+      .reference-header .nav-inner > a:hover { background: #484848; }
+      .reference-header .menu-toggle { display: none; }
+      .reference-hero { height: 470px; min-height: 0; border-bottom: 8px solid #c90000; position: relative; overflow: hidden; }
+      .reference-hero .hero-slide { background-size: cover; background-position: center; }
+      .reference-hero .hero-overlay { display: none; }
+      .reference-hero .hero-content { position: absolute; left: auto; right: max(24px, calc((100% - 1400px)/2)); top: 23px; width: 490px; max-width: calc(100% - 100px); height: auto; margin: 0; padding: 14px 15px 24px; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; text-align: center; border-radius: 22px; color: #fff; background: rgba(53,22,22,.70); }
+      .reference-hero .eyebrow { display: none; }
+      .reference-hero .hero-content h1 { margin: 0 0 16px; color: #fff; font: 400 26px/34px Arial,sans-serif; letter-spacing: 0; }
+      .reference-hero .hero-content > p:not(.eyebrow) { display: block; margin: 0 0 28px; color: #fff; font: 400 18px/28px Arial,sans-serif; }
+      .reference-hero .button { padding: 9px 24px; border: 0; border-radius: 0; background: #c50000; color: #fff; font: 700 20px/30px Arial,sans-serif; text-transform: uppercase; letter-spacing: 0; }
+      .reference-hero .hero-controls { position: absolute; inset: 0; width: 100%; max-width: none; transform: none; margin: 0; pointer-events: none; }
+      .reference-hero .hero-arrow { position: absolute; top: 50%; transform: translateY(-50%); width: 45px; height: 45px; padding: 0; border: 2px solid #ffffffa0; border-radius: 50%; color: #fff; background: #ffffff20; font: 40px/36px Arial,sans-serif; pointer-events: auto; }
+      .reference-hero .hero-arrow.prev { left: 2%; }
+      .reference-hero .hero-arrow.next { right: 2%; }
+      .reference-hero .hero-dots { position: absolute; bottom: 22px; left: 50%; transform: translateX(-50%); display: flex; gap: 12px; pointer-events: auto; }
+      .reference-hero .hero-dot, .reference-hero .hero-dot.active { width: 50px; height: 6px; border: 0; border-radius: 0; background: #ffffff55; }
+      .reference-hero .hero-dot.active { background: #fff; }
+      @media(max-width:1550px) {
+       .reference-header .reference-brandbar { gap: 24px; }
+       .reference-header .reference-school { font-size: 20px; line-height: 28px; }
+       .reference-header .nav-inner > a { flex: 1; padding: 0 10px; font-size: 15px; }
+      }
+      @media(max-width:1100px) {
+       .reference-header .reference-brandbar { height: auto; min-height: 100px; flex-wrap: wrap; gap: 16px; padding: 10px 0; }
+       .reference-header .reference-logo, .reference-header .reference-logo img { width: 180px; flex-basis: 180px; }
+       .reference-header .reference-logo img { height: 74px; }
+       .reference-header .reference-school { font-size: 17px; line-height: 25px; }
+       .reference-header .reference-tools { width: 200px; flex-basis: 200px; }
+       .reference-header .menu-toggle { display: block; }
+       .reference-header .nav-inner { display: none; position: static; transform: none; padding: 0; background: #363636; }
+       .reference-header .main-nav.open .nav-inner { display: flex; flex-direction: column; }
+       .reference-header .nav-inner > a { justify-content: space-between; width: 100%; border: 0; border-bottom: 1px solid #505050; }
+      }
+      @media(max-width:650px) {
+       .reference-header .reference-brandbar { width: calc(100% - 24px); gap: 12px; }
+       .reference-header .reference-logo, .reference-header .reference-logo img { width: 125px; flex-basis: 125px; }
+       .reference-header .reference-logo img { height: 55px; }
+       .reference-header .reference-school { font-size: 13px; line-height: 19px; }
+       .reference-header .reference-tools { flex: 1 1 75%; display: flex; gap: 12px; align-items: center; }
+       .reference-header .reference-flags { margin: 0; gap: 10px; }
+       .reference-header .reference-flags img { height: 20px; }
+       .reference-header .search-panel { flex: 1; }
+       .reference-hero { height: 530px; }
+       .reference-hero .hero-content { top: auto; bottom: 53px; left: 50%; right: auto; transform: translateX(-50%); width: calc(100% - 70px); max-width: none; padding: 18px 14px; }
+       .reference-hero .hero-content h1 { font-size: 21px; line-height: 28px; margin-bottom: 12px; }
+       .reference-hero .hero-content > p:not(.eyebrow) { font-size: 15px; line-height: 23px; margin-bottom: 18px; }
+       .reference-hero .button { font-size: 17px; }
+       .reference-hero .hero-arrow { width: 30px; height: 34px; font-size: 28px; line-height: 28px; }
+      }
+    </style>
+    <style id="three-fixes">
+          @media (min-width: 1101px) {
+          .reference-header .reference-brandbar {
+            width: min(1230px, calc(100% - 40px));
+            height: 100px;
+            gap: 28px;
+          }
+          .reference-header .reference-logo {
+            width: 225px;
+            flex-basis: 225px;
+          }
+          .reference-header .reference-logo img {
+            width: 225px;
+            height: 90px;
+          }
+          .reference-header .reference-school {
+            font-size: 19px;
+            line-height: 26px;
+          }
+          .reference-header .reference-tools {
+            width: 200px;
+            flex-basis: 200px;
+          }
+          .reference-header .reference-flags img {
+            height: 21px;
+          }
+          .reference-header .search-panel {
+            height: 32px;
+          }
+          .reference-header .main-nav {
+            border-top-width: 6px;
+          }
+          .reference-header .nav-inner {
+            width: min(1230px, calc(100% - 40px));
+            min-height: 42px;
+          }
+          .reference-header .nav-inner > a {
+            min-height: 42px;
+            padding: 0 10px;
+            font-size: 14px;
+            gap: 5px;
+          }
+          .reference-hero {
+            height: 380px;
+            border-bottom-width: 6px;
+          }
+          .reference-hero .hero-content {
+            width: 395px;
+            top: 18px;
+            right: max(55px, calc((100% - 1120px) / 2));
+            padding: 12px 14px 18px;
+            border-radius: 18px;
+          }
+          .reference-hero .hero-content h1 {
+            font-size: 21px;
+            line-height: 28px;
+            margin-bottom: 12px;
+          }
+          .reference-hero .hero-content > p:not(.eyebrow) {
+            font-size: 15px;
+            line-height: 23px;
+            margin-bottom: 20px;
+          }
+          .reference-hero .button {
+            font-size: 16px;
+            line-height: 24px;
+            padding: 8px 20px;
+          }
+        }
+      
+      .reference-header .search-panel { align-items:center; border:1px solid #e2e2e2; border-radius:24px; overflow:hidden; }
+      .reference-header .search-panel:focus-within { border-color:#888; box-shadow:0 0 0 2px #00000012; }
+      .reference-header .search-panel input,
+      .reference-header .search-panel input:focus,
+      .reference-header .search-panel input:focus-visible {
+       appearance:none; -webkit-appearance:none; border:0!important; outline:none!important;
+       box-shadow:none!important; border-radius:0; background:transparent; margin:0; height:100%;
+      }
+      .reference-header .search-toggle { height:100%; width:36px; flex:0 0 36px; padding:0 9px 0 0; }
+      .reference-header .search-toggle svg { width:20px; height:20px; }
+      .reference-header .search-toggle:focus-visible { outline:2px solid #777; outline-offset:-4px; border-radius:50%; }
+      
+      #news { padding:22px 0 0; background:#fff; font-family:Arial,Helvetica,sans-serif; }
+      #news > .container, #events > .container { width:min(1230px,calc(100% - 40px)); max-width:none; }
+      #news .feed-title, #events .feed-title { margin:0 0 30px; text-align:center; font:400 26px/36px Arial,sans-serif; letter-spacing:1px; color:#0a0a0a; }
+      #news .news-layout { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:30px; padding-bottom:54px; }
+      #news .news-card { min-width:0; margin:0; padding:0; border:0; background:none; box-shadow:none; }
+      #news .news-picture { position:relative; height:146px; border-bottom:4px solid #c40909; background:#f4f4f4; }
+      #news .news-picture img { display:block; width:100%; height:100%; object-fit:cover; font-size:14px; }
+      #news .news-category { position:absolute; bottom:0; left:0; display:block; padding:6px 10px; background:#c40909; color:#fff; font:700 13px/18px Arial,sans-serif; text-transform:uppercase; }
+      #news .news-card h3 { margin:13px 0 10px; min-height:54px; padding:0; font:700 14px/18px Arial,sans-serif; color:#0a0a0a; }
+      #news .news-card h3::after { content:none; }
+      #news .news-card > p { margin:0; font:400 14px/22px Arial,sans-serif; color:#111; }
+      #news .feed-more { display:block; width:100%; margin:0; padding:5px 15px; background:#c40909; text-align:center; color:#fff; font:400 18px/24px Arial,sans-serif; }
+      #news .feed-more:hover { background:#a70000; }
+      #events { padding:28px 0 50px; background:linear-gradient(#0009,#0009),url('assets/events-bg.jpg') center/cover; background-color:#333; font-family:Arial,sans-serif; }
+      #events .feed-title { color:#fff; }
+      #events .events-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:30px; }
+      #events .event-poster { min-width:0; }
+      #events .event-poster img { width:100%; height:160px; object-fit:cover; background:#eee; color:#111; }
+      #events .event-poster h3 { margin:0; padding:15px; background:#fff; color:#111; font:700 16px/23px Arial,sans-serif; }
+      @media(max-width:900px){
+       #news .news-layout,#events .events-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+       #news .news-card h3 { min-height:0; }
+      }
+      @media(max-width:550px){
+       #news .news-layout,#events .events-grid { grid-template-columns:1fr; gap:28px; }
+       #news .news-picture { height:auto; aspect-ratio:1.95; }
+       #events .event-poster img { height:auto; aspect-ratio:1.8; }
+      }
+    </style>
+    <style id="event-cards-reference">
+              
+      #events { padding:28px 0 0; background:linear-gradient(#0009,#0009),url('assets/other/events-bg.jpg') center/cover; background-color:#333; }
+      #events > .container { width:min(1230px,calc(100% - 80px)); }
+      #events .feed-title { margin:0 0 30px; color:#fff; font:400 26px/36px Arial,sans-serif; }
+      #events .event-carousel { position:relative; padding-bottom:30px; }
+      #events .events-grid { display:flex; gap:30px; overflow-x:auto; scroll-snap-type:x mandatory; scrollbar-width:none; }
+      #events .events-grid::-webkit-scrollbar { display:none; }
+      #events .event-poster { flex:0 0 calc((100% - 90px)/4); min-width:0; background:#fff; scroll-snap-align:start; }
+      #events .event-poster > a { display:block; height:100%; color:#080808; text-decoration:none; }
+      #events .event-photo { position:relative; }
+      #events .event-photo img { display:block; width:100%; height:auto; aspect-ratio:2/1; object-fit:cover; background:#eee; }
+      #events .event-calendar { position:absolute; bottom:-30px; left:25px; width:70px; height:70px; display:flex; flex-direction:column; align-items:center; justify-content:center; color:#fff; background:#302626; box-shadow:0 3px 5px #0005; }
+      #events .event-calendar strong { font:700 26px/32px Arial,sans-serif; }
+      #events .event-calendar span { font:700 14px/24px Arial,sans-serif; }
+      #events .event-details { padding:45px 15px 18px; }
+      #events .event-details h3 { margin:0 0 12px; padding:0; height:46px; overflow:hidden; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; background:none; font:700 18px/23px Arial,sans-serif; }
+      #events .event-details p { margin:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font:400 12px/20px Arial,sans-serif; }
+      #events .event-prev,#events .event-next { position:absolute; z-index:3; top:84px; width:36px; height:36px; display:grid; place-items:center; padding:0 0 3px; border:2px solid #ffffffb3; border-radius:50%; color:#fff; background:#3336; cursor:pointer; font:400 36px/1 Arial,sans-serif; }
+      #events .event-prev { left:-33px; } #events .event-next { right:-33px; }
+      #events .events-more { display:block; padding:5px 15px; color:#fff; background:#c40909; text-align:center; font:400 18px/24px Arial,sans-serif; }
+      #events .events-more:hover { background:#a70000; }
+      @media(max-width:900px){ #events .event-poster { flex-basis:calc((100% - 30px)/2); } }
+      @media(max-width:550px){ #events .event-poster { flex-basis:100%; } #events .feed-title { font-size:23px; } }
+    </style>
+    <style id="slider-effects">
+      .reference-hero { isolation:isolate; }
+      .reference-hero .hero-slide { background-image:none; overflow:hidden; }
+      .reference-hero .hero-slide::before {
+       content:""; position:absolute; inset:0; z-index:0;
+       background-image:var(--hero-image); background-position:center; background-size:cover;
+       transform:scale(1); transform-origin:center;
+      }
+      .reference-hero .hero-slide.active::before { animation:banner-zoom 8s ease-in-out infinite alternate; }
+      .reference-hero .hero-slide:nth-child(even).active::before { animation-direction:alternate-reverse; }
+      @keyframes banner-zoom { from { transform:scale(1); } to { transform:scale(1.12); } }
+      .reference-hero .hero-slide { z-index:0; }
+      .reference-hero .hero-slide.active { z-index:1; }
+      .reference-hero .hero-content { z-index:3; }
+      .reference-hero .hero-controls { z-index:5; }
+      .reference-hero .confetti-layer { position:absolute; inset:0; z-index:2; overflow:hidden; pointer-events:none; }
+      .reference-hero .confetti-piece {
+       position:absolute; top:-24px; left:var(--x); width:var(--size); height:calc(var(--size)*1.3);
+       background:var(--color); opacity:.85;
+       animation:confetti-fall var(--duration) linear var(--delay) infinite;
+      }
+      .reference-hero .confetti-piece:nth-child(3n) { clip-path:polygon(0 0,100% 45%,15% 100%); }
+      .reference-hero .confetti-piece:nth-child(3n + 1) { clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%); }
+      @keyframes confetti-fall {
+       from { transform:translate3d(0,0,0) rotate(0deg) rotateY(0deg); }
+       to { transform:translate3d(var(--drift),var(--fall-distance,600px),0) rotate(var(--spin)) rotateY(540deg); }
+      }
+      .reference-hero.effects-paused .confetti-piece,
+      .reference-hero.effects-paused .hero-slide.active::before { animation-play-state:paused; }
+      @media(prefers-reduced-motion:reduce) {
+       .reference-hero .hero-slide.active::before { animation:none; transform:none; }
+       .reference-hero .confetti-layer { display:none; }
+      }
+    </style>
+    <style id="banner-effects-fix">
+      .reference-hero .hero-slide.active::before {
+       animation:banner-zoom 6s ease-in-out infinite alternate !important;
+      }
+      .reference-hero .hero-slide:nth-child(even).active::before {
+       animation-direction:alternate-reverse !important;
+      }
+      .reference-hero .confetti-layer { display:block !important; }
+      .reference-hero .confetti-piece {
+       display:block;
+       animation:confetti-fall var(--duration,8s) linear var(--delay,0s) infinite !important;
+      }
+      .reference-hero.effects-paused .confetti-piece,
+      .reference-hero.effects-paused .hero-slide.active::before,
+      .reference-hero.effects-user-off .confetti-piece,
+      .reference-hero.effects-user-off .hero-slide.active::before { animation-play-state:paused !important; }
+      .reference-hero.effects-user-off .confetti-layer { display:none !important; }
+      .reference-hero .effects-toggle {
+       position:absolute; bottom:12px; right:16px; z-index:10;
+       padding:5px 10px; border:1px solid #ffffff80; border-radius:4px;
+       background:#0009; color:#fff; font:14px/20px Arial,sans-serif; cursor:pointer;
+      }
+      .reference-hero .effects-toggle:focus-visible { outline:2px solid white; outline-offset:2px; }
+    </style>
+    <style id="dropdown-and-banner-content">
+      .reference-header .nav-inner { overflow: visible; }
+      .reference-header .nav-item { position: relative; flex: 1 1 auto; min-width: 0; }
+      .reference-header .nav-item > a { min-height: 42px; display: flex; align-items: center; justify-content: center; gap: 5px; padding: 0 10px; border-left: 1px solid #505050; color: #fff; font: 400 14px/1.3 Arial,sans-serif; white-space: nowrap; }
+      .reference-header .nav-item > a::after { content: ''; width: 6px; height: 6px; border-right: 2px solid #999; border-bottom: 2px solid #999; transform: translateY(-2px) rotate(45deg); }
+      .reference-header .nav-item:hover > a, .reference-header .nav-item:focus-within > a { background: #484848; }
+      .reference-header .nav-dropdown { position: absolute; top: 100%; left: 0; min-width: 210px; display: none; z-index: 50; padding: 5px 0; background: #363636; box-shadow: 0 8px 15px #0005; }
+      .reference-header .nav-item:hover > .nav-dropdown, .reference-header .nav-item:focus-within > .nav-dropdown { display: block; }
+      .reference-header .nav-dropdown a { display: block; padding: 8px 12px; border-bottom: 1px solid #505050; color: #fff; background: #363636; font: 400 13px/18px Arial,sans-serif; white-space: nowrap; }
+      .reference-header .nav-dropdown a:hover { background: #c90000; }
+      
+      @media (min-width: 1101px) {
+        .reference-hero .slide-genai .hero-content,
+        .reference-hero .slide-admissions .hero-content { left: max(35px,calc((100% - 1120px)/2)); right: auto; top: 18px; width: 300px; max-width: calc(100% - 70px); padding: 14px 16px 18px; align-items: flex-start; text-align: left; background: rgba(180,0,0,.78); }
+        .reference-hero .slide-innovation .hero-content { left: auto; right: max(35px,calc((100% - 1120px)/2)); top: 18px; width: 350px; max-width: calc(100% - 70px); padding: 14px 16px 18px; align-items: flex-start; text-align: left; background: rgba(40,25,25,.78); }
+        .reference-hero .slide-genai .hero-content h1,
+        .reference-hero .slide-innovation .hero-content h1,
+        .reference-hero .slide-admissions .hero-content h1 { font-size: 19px; line-height: 25px; }
+        .reference-hero .slide-genai .hero-content > p:not(.eyebrow),
+        .reference-hero .slide-innovation .hero-content > p:not(.eyebrow),
+        .reference-hero .slide-admissions .hero-content > p:not(.eyebrow) { font-size: 20px; line-height: 24px; margin-bottom: 24px; }
+      }
+      @media (max-width: 1100px) {
+        .reference-header .nav-item { width: 100%; }
+        .reference-header .nav-item > a { justify-content: space-between; border: 0; border-bottom: 1px solid #505050; }
+        .reference-header .nav-dropdown { position: static; width: 100%; box-shadow: none; }
+      }
+    </style>
+    <style>
+      .reference-hero .slide-genai::after,
+      .reference-hero .slide-innovation::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        pointer-events: none;
+        transform: none;
+        background: repeating-linear-gradient(
+          90deg,
+          transparent 0 42px,
+          rgba(255,255,255,.12) 42px 68px,
+          rgba(0,0,0,.12) 68px 92px,
+          transparent 92px 160px
+        );
+        background-size: 160px 100%;
+      }
+      
+      .reference-hero .slide-genai.active::after,
+      .reference-hero .slide-innovation.active::after {
+        animation: stripes-right 3s linear infinite !important;
+        animation-play-state: running !important;
+      }
+      
+      @keyframes stripes-right {
+        from { background-position: 0 0; }
+        to { background-position: 160px 0; }
+      }
+    </style>
+    <style>
+      .reference-hero .slide-innovation .button {
+        align-self: center;
+      }
+      
+      .reference-hero .slide-admissions .button {
+        border-radius: 999px;
+      }
+    </style>
+    <style id="reference-lower-sections">
+      .reference-section { padding: 29px 0; font-family: Arial, sans-serif; color: #080808; }
+      .reference-container { width: min(1230px, calc(100% - 40px)); margin: 0 auto; }
+      .reference-heading { margin: 0 0 48px; text-align: center; }
+      .reference-heading h2 { margin: 0 0 13px; font: 400 26px/34px Arial,sans-serif; letter-spacing: 1px; }
+      .reference-heading p { max-width: 912px; margin: 0 auto; font: 400 14px/22px Arial,sans-serif; }
+      .reference-pair { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 29px; align-items: start; }
+      .reference-card { display: grid; grid-template-columns: 1fr 1fr; background: #fff; color: #080808; box-shadow: 0 1px 2px #0004; }
+      .reference-card > img { width: 100%; height: 100%; min-height: 270px; object-fit: cover; }
+      .reference-card-copy { padding: 16px 14px; }
+      .reference-card h3 { margin: 0 0 11px; font: 400 16px/22px Arial,sans-serif; }
+      .reference-card p { margin: 0; font: 400 14px/22px Arial,sans-serif; text-align: justify; }
+      .reference-card a:hover { color: #c40909; }
+      #education.reference-section { background: #fff; border-top: 2px solid #c40909; }
+      #cooperation.reference-section { background: linear-gradient(#0009,#0009),url('assets/other/C1.jpg') center/cover; background-color: #535958; }
+      #cooperation .reference-heading { color: #fff; }
+      #cooperation .reference-pair { align-items: stretch; }
+      #cooperation .reference-card > img { min-height: 344px; }
+      #cooperation .reference-card-copy { align-self: center; }
+      #cooperation .reference-card h3 { font-size: 18px; }
+      #alumni.reference-section { background: #fff; }
+      #alumni .reference-heading { margin-bottom: 29px; }
+      .reference-alumni-carousel { position: relative; }
+      .reference-alumni-track { display: flex; gap: 36px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; }
+      .reference-alumni-track::-webkit-scrollbar { display: none; }
+      .reference-alumni-card { flex: 0 0 calc((100% - 108px)/4); min-width: 0; background: #f4f4f4; border-bottom: 2px solid #ddd; scroll-snap-align: start; }
+      .reference-alumni-card > a { display: block; height: 100%; }
+      .reference-alumni-photo { height: 194px; position: relative; border-bottom: 4px solid #c40909; }
+      .reference-alumni-photo img { height: 100%; width: 100%; object-fit: cover; }
+      .reference-alumni-photo span { position: absolute; bottom: 0; left: 0; padding: 6px 10px; background: #c40909; color: #fff; font: 700 12px/16px Arial,sans-serif; }
+      .reference-alumni-copy { padding: 13px 16px 22px; }
+      .reference-alumni-copy h3 { min-height: 38px; margin: 0 0 18px; font: 700 14px/19px Arial,sans-serif; }
+      .reference-alumni-copy p { margin: 0; font: 400 14px/22px Arial,sans-serif; }
+      .alumni-prev,.alumni-next { position: absolute; z-index: 2; top: 128px; border: 0; padding: 0; width: 26px; height: 38px; background: #ffffffa0; color: #555; font: 32px/38px Arial,sans-serif; cursor: pointer; }
+      .alumni-prev { left: -16px; }.alumni-next { right: -16px; }
+      .reference-video-more { display: block; padding: 6px 16px; text-align: center; background: #c40909; color: #fff; font: 400 18px/23px Arial,sans-serif; }
+      .reference-footer { position: relative; padding: 45px 0 0; color: #fff; background: linear-gradient(#373535bd,#383535bd),url('assets/other/footer-bg.jpg') center/cover; background-color: #343130; font-family: Arial,sans-serif; }
+      .reference-footer-grid { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 29px; padding-bottom: 54px; }
+      .reference-footer h3 { margin: 0 0 14px; padding: 0 0 10px; border-bottom: 1px solid #ddd; color: #fff; font: 700 13px/18px Arial,sans-serif; }
+      .reference-footer-grid > div > a { display: block; margin-bottom: 6px; font: 400 14px/22px Arial,sans-serif; }
+      .reference-footer a:hover { color: #ffd36c; }
+      .reference-footer-logo { width: 208px; height: 48px; object-fit: contain; object-position: left; margin: 0 0 22px; filter: grayscale(1) brightness(0) invert(1); }
+      .reference-footer-contact > a { margin-bottom: 0!important; }
+      .reference-footer-contact p { margin: 0; font: 400 14px/22px Arial,sans-serif; }
+      .reference-socials { display: flex; gap: 10px; margin-top: 19px; }
+      .reference-socials a { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; background: #385ca3; color: #fff; font: 700 16px Arial,sans-serif; }
+      .reference-socials a:last-child { background: #cc2c18; font-size: 13px; }
+      .reference-copyright { padding: 11px 0; border-top: 1px solid #ffffff25; color: #bbb; font: 400 14px/20px Arial,sans-serif; }
+      .reference-back-top { position: absolute; right: 22px; bottom: 19px; width: 37px; height: 37px; border: 2px solid #111; text-align: center; color: #111; font-size: 21px; }
+      @media(max-width:960px) {
+       .reference-container { width: calc(100% - 32px); }
+       .reference-pair { gap: 19px; }
+       .reference-card { grid-template-columns: 1fr; }
+       .reference-card > img,#cooperation .reference-card > img { height: 224px; min-height: 0; }
+       .reference-alumni-card { flex-basis: calc((100% - 36px)/2); }
+       .reference-footer-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+      }
+      @media(max-width:520px) {
+       .reference-section { padding: 24px 0; }
+       .reference-heading { margin-bottom: 22px; }
+       .reference-heading h2 { font-size: 20px; line-height: 27px; }
+       .reference-heading p,.reference-card p { font-size: 13px; line-height: 20px; }
+       .reference-heading br { display: none; }
+       .reference-pair,.reference-footer-grid { grid-template-columns: 1fr; }
+       .reference-alumni-card { flex-basis: 100%; }
+       .reference-footer-grid { padding-bottom: 26px; }
+       .reference-copyright { padding-right: 36px; font-size: 11px; }
+       .reference-back-top { right: 10px; bottom: 10px; }
+      }
+    </style>
+    <style>
+      .video-cover iframe {
+        position: absolute;
+        inset: 0;
+        z-index: 3;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+
+      .video-cover.playing::after {
+        display: none;
+      }
+    </style>
+    <style>
+      .video-cover::after {
+        content: "";
+        position: absolute;
+        inset: 68% 0 0;
+        z-index: 1;
+        background: rgba(0, 0, 0, .4);
+        backdrop-filter: blur(1px);
+        -webkit-backdrop-filter: blur(1px);
+        pointer-events: none;
+      }
+
+      .video-cover.playing::after {
+        display: none;
+      }
+
+      .video-cover .video-title {
+        position: absolute;
+        right: 10px;
+        bottom: 20px;
+        left: 10px;
+        z-index: 2;
+        color: #fff;
+        text-align: right;
+        font: 700 14px/20px Arial, sans-serif;
+        pointer-events: none;
+      }
+
+      .video-cover button {
+        width: 64px;
+        height: 45px;
+        display: grid;
+        place-items: center;
+        padding: 0;
+        border: 0;
+        border-radius: 12px;
+        background: #f00;
+        color: #fff;
+        font: 24px/1 Arial, sans-serif;
+        opacity: 1;
+        cursor: pointer;
+      }
+
+      .video-cover:hover button,
+      .video-cover button:focus-visible {
+        background: #d90000;
+      }
+
+      .video-cover button:focus-visible {
+        outline: 2px solid #fff;
+        outline-offset: 3px;
+      }
+
+      .testimonial-section {
+        padding: 30px 0 28px;
+        background: #343434;
+        color: #fff;
+        font-family: Arial, sans-serif;
+      }
+
+      .testimonial-section .testimonial-inner {
+        width: min(1230px, calc(100% - 40px));
+        max-width: none;
+      }
+
+      .testimonial-section h2 {
+        margin: 0 0 38px;
+        font: 400 26px/34px Arial, sans-serif;
+        letter-spacing: 0;
+        text-align: center;
+        text-transform: none;
+      }
+
+      .testimonial-slides {
+        max-width: 920px;
+        margin: 0 auto;
+      }
+
+      .testimonial-slide {
+        display: grid;
+        grid-template-columns: 116px minmax(0,1fr);
+        gap: 30px;
+        text-align: left;
+      }
+
+      .testimonial-slide[hidden] {
+        display: none;
+      }
+
+      .testimonial-photo {
+        width: 116px;
+        height: 156px;
+        object-fit: cover;
+        border-radius: 60px;
+        background: #444;
+      }
+
+      .testimonial-section blockquote {
+        height: 136px;
+        max-width: none;
+        margin: 12px 0 24px;
+        padding: 0 28px 0 36px;
+        border-left: 2px solid #eee;
+        overflow-y: auto;
+        color: #fff;
+        font: italic 400 15px/23px Arial, sans-serif;
+        text-align: left;
+        scrollbar-width: thin;
+        scrollbar-color: #3f51b5 #303030;
+      }
+
+      .testimonial-author {
+        min-height: 68px;
+        font: 400 15px/23px Arial, sans-serif;
+      }
+
+      .testimonial-author strong {
+        display: block;
+        font-weight: 700;
+      }
+
+      .testimonial-author p {
+        margin: 0;
+      }
+
+      .testimonial-dots {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 24px;
+      }
+
+      .testimonial-dots button {
+        width: 12px;
+        height: 12px;
+        padding: 0;
+        border: 0;
+        border-radius: 50%;
+        background: #252525;
+        cursor: pointer;
+      }
+
+      .testimonial-dots button.active {
+        background: #111;
+      }
+
+      .testimonial-dots button:focus-visible {
+        outline: 2px solid #fff;
+        outline-offset: 3px;
+      }
+
+      @media (max-width: 650px) {
+        .testimonial-section h2 {
+          margin-bottom: 24px;
+        }
+
+        .testimonial-slide {
+          grid-template-columns: 80px minmax(0,1fr);
+          gap: 16px;
+        }
+
+        .testimonial-photo {
+          width: 80px;
+          height: 108px;
+        }
+
+        .testimonial-section blockquote {
+          height: 184px;
+          margin-top: 0;
+          padding: 0 12px 0 16px;
+          font-size: 14px;
+          line-height: 22px;
+        }
+
+        .testimonial-author {
+          font-size: 14px;
+          line-height: 22px;
+        }
+      }
+    </style>
+    <style>
+      .reference-video-more span {
+        position: relative;
+        display: inline-block;
+        transition: transform .2s ease;
+      }
+
+      .reference-video-more span::after {
+        content: "›";
+        position: absolute;
+        left: calc(100% + 18px);
+        top: 50%;
+        transform: translate(-6px, -50%);
+        opacity: 0;
+        font-size: 25px;
+        line-height: 1;
+        transition: opacity .2s ease, transform .2s ease;
+      }
+
+      .reference-video-more:hover span,
+      .reference-video-more:focus-visible span {
+        transform: translateX(-10px);
+      }
+
+      .reference-video-more:hover span::after,
+      .reference-video-more:focus-visible span::after {
+        opacity: 1;
+        transform: translate(0, -50%);
+      }
+
+      .reference-socials a {
+        position: relative;
+        overflow: visible;
+      }
+
+      .reference-socials a::before {
+        content: "Follow on " attr(aria-label);
+        position: absolute;
+        bottom: calc(100% + 12px);
+        left: 50%;
+        z-index: 20;
+        padding: 8px 12px;
+        border-radius: 4px;
+        background: #000;
+        color: #fff;
+        font: 400 14px/20px Arial, sans-serif;
+        white-space: nowrap;
+        transform: translate(-50%, 4px);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity .2s ease, transform .2s ease;
+      }
+
+      .reference-socials a::after {
+        content: "";
+        position: absolute;
+        bottom: calc(100% + 4px);
+        left: 50%;
+        z-index: 20;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-top: 8px solid #000;
+        transform: translate(-50%, 4px);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity .2s ease, transform .2s ease;
+      }
+
+      .reference-socials a:hover,
+      .reference-socials a:focus-visible {
+        color: #fff;
+        box-shadow: 0 0 0 2px #ffffff30;
+      }
+
+      .reference-socials a:hover::before,
+      .reference-socials a:hover::after,
+      .reference-socials a:focus-visible::before,
+      .reference-socials a:focus-visible::after {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(-50%, 0);
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .reference-video-more span,
+        .reference-video-more span::after,
+        .reference-socials a::before,
+        .reference-socials a::after {
+          transition: none;
+        }
+      }
+    </style>
+    <style id="smooth-interactions">
+      .more-motion {
+        transition: background-color .5s ease, color .5s ease !important;
+      }
+      .more-motion .more-label {
+        position: relative;
+        display: inline-block;
+        transform: translateX(0);
+        transition: transform .55s cubic-bezier(.22,.61,.36,1) !important;
+      }
+      .more-motion .more-label::after {
+        content: "";
+        position: absolute;
+        left: calc(100% + 12px);
+        top: 50%;
+        opacity: 0;
+        transform: translate(-8px,-50%) rotate(-45deg);
+        width: 7px;
+        height: 7px;
+        border-right: 2px solid currentColor;
+        border-bottom: 2px solid currentColor;
+        transition: opacity .55s ease, transform .55s cubic-bezier(.22,.61,.36,1) !important;
+      }
+      .more-motion:hover .more-label,
+      .more-motion:focus-visible .more-label {
+        transform: translateX(-10px);
+      }
+      .more-motion:hover .more-label::after,
+      .more-motion:focus-visible .more-label::after {
+        opacity: 1;
+        transform: translate(0,-50%) rotate(-45deg);
+      }
+      .reference-hero .button.more-motion:hover {
+        transform: none;
+      }
+      .reference-header .nav-departments > a {
+        transition: background-color .35s ease !important;
+      }
+      .reference-header .nav-departments:hover > a,
+      .reference-header .nav-departments:focus-within > a {
+        background: #377fba;
+      }
+      .reference-header .nav-departments > .departments-menu {
+        display: grid;
+        grid-template-columns: 140px minmax(0,1fr);
+        width: min(670px,calc(100vw - 180px));
+        padding: 6px;
+        gap: 6px;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transform: translateY(8px);
+        transition: opacity .3s ease, transform .3s ease, visibility .3s !important;
+      }
+      .reference-header .nav-departments:hover > .departments-menu,
+      .reference-header .nav-departments:focus-within > .departments-menu {
+        display: grid;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateY(0);
+      }
+      .departments-column:first-child {
+        border-right: 1px solid #aaa;
+        padding-right: 6px;
+      }
+      .departments-column h3 {
+        margin: 0;
+        padding: 9px 14px;
+        background: #c40909;
+        color: #fff;
+        font: 700 13px/19px Arial,sans-serif;
+      }
+      .reference-header .departments-menu a {
+        padding: 9px 14px;
+        white-space: normal;
+        font: 400 13px/19px Arial,sans-serif;
+        transition: background-color .3s ease !important;
+      }
+      #events > .container {
+        width: min(1230px,calc(100% - 80px));
+      }
+      #events .event-carousel {
+        padding-bottom: 30px;
+        --event-gap: 30px;
+        --event-columns: 4;
+      }
+      #events .event-viewport {
+        overflow: hidden;
+      }
+      #events .events-grid {
+        display: flex;
+        align-items: stretch;
+        gap: var(--event-gap);
+        width: 100%;
+        overflow: visible;
+        scroll-snap-type: none;
+      }
+      #events .event-poster {
+        flex: 0 0 calc((100% - 90px)/4);
+        display: flex;
+        background: #fff;
+      }
+      #events .event-poster > a {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+      }
+      #events .event-photo {
+        flex: none;
+        isolation: isolate;
+      }
+      #events .event-photo img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 2/1;
+        object-fit: cover;
+        transition: filter .5s ease !important;
+      }
+      #events .event-calendar {
+        z-index: 1;
+        left: 24px;
+        bottom: -30px;
+        width: 70px;
+        height: 70px;
+        transition: background-color .5s ease !important;
+      }
+      #events .event-details {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 46px 15px 18px;
+      }
+      #events .event-details h3 {
+        height: auto;
+        min-height: 46px;
+        margin: 0 0 16px;
+        font: 700 18px/23px Arial,sans-serif;
+        transition: color .5s ease !important;
+      }
+      #events .event-details p:first-of-type {
+        margin-top: auto;
+      }
+      #events .event-poster > a:hover .event-photo img {
+        filter: brightness(1.06);
+      }
+      #events .event-poster > a:hover h3,
+      #events .event-poster > a:focus-visible h3 {
+        color: #c40909;
+      }
+      #events .event-poster > a:hover .event-calendar {
+        background: #413131;
+      }
+      #events .event-prev,
+      #events .event-next {
+        top: var(--event-arrow-top,70px);
+        transform: translateY(-50%);
+        transition: background-color .45s ease, border-color .45s ease, box-shadow .45s ease !important;
+      }
+      #events .event-prev:hover,
+      #events .event-next:hover,
+      #events .event-prev:focus-visible,
+      #events .event-next:focus-visible {
+        background: #303f98;
+        border-color: #303f98;
+        box-shadow: 0 2px 8px #0003;
+      }
+      @media(max-width:1100px) {
+        .reference-header .nav-departments > .departments-menu {
+          display: none;
+          width: 100%;
+          min-width: 0;
+          transform: none;
+        }
+        .reference-header .nav-departments:hover > .departments-menu,
+        .reference-header .nav-departments:focus-within > .departments-menu {
+          display: grid;
+        }
+      }
+      @media(max-width:900px) {
+        #events .event-carousel {
+          --event-columns: 2;
+        }
+        #events .event-poster {
+          flex-basis: calc((100% - 30px)/2);
+        }
+        #events .event-prev,
+        #events .event-next {
+          top: var(--event-arrow-top,70px);
+        }
+      }
+      @media(max-width:550px) {
+        #events .event-carousel {
+          --event-columns: 1;
+        }
+        #events .event-poster {
+          flex-basis: 100%;
+        }
+        #events .event-prev,
+        #events .event-next {
+          top: var(--event-arrow-top,70px);
+        }
+        .reference-header .nav-departments > .departments-menu {
+          grid-template-columns: 1fr;
+        }
+        .departments-column:first-child {
+          border: 0;
+          padding: 0;
+        }
+      }
+    </style>
+    <style id="alignment-fixes">
+      .more-motion .more-label {
+        line-height: inherit;
+        vertical-align: middle;
+      }
+      #news .feed-more,
+      #events .events-more,
+      .reference-video-more {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 34px;
+        box-sizing: border-box;
+      }
+      #events .event-viewport {
+        width: 100%;
+      }
+      #events .event-poster,
+      #events .event-poster > a,
+      #events .event-details {
+        min-width: 0;
+        box-sizing: border-box;
+      }
+      #events .event-photo img {
+        display: block;
+      }
+      #events .event-details h3 {
+        flex: none;
+        height: 46px;
+        min-height: 46px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+      #events .event-prev,
+      #events .event-next {
+        display: grid;
+        place-items: center;
+        padding: 0;
+        font-size: 0;
+        line-height: 0;
+      }
+      #events .event-prev::before,
+      #events .event-next::before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-top: 3px solid currentColor;
+        border-right: 3px solid currentColor;
+        grid-area: 1 / 1;
+      }
+      #events .event-prev::before {
+        transform: translateX(2px) rotate(-135deg);
+      }
+      #events .event-next::before {
+        transform: translateX(-2px) rotate(45deg);
+      }
+      .reference-header .nav-news > a {
+        transition: background-color .35s ease !important;
+      }
+      .reference-header .nav-news:hover > a,
+      .reference-header .nav-news:focus-within > a {
+        background: #377fba;
+      }
+      .reference-header .nav-news > .news-menu {
+        display: grid;
+        grid-template-columns: 1fr 1.1fr;
+        width: 350px;
+        min-width: 0;
+        right: 0;
+        left: auto;
+        padding: 6px;
+        gap: 6px;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transform: translateY(8px);
+        transition: opacity .3s ease, transform .3s ease, visibility .3s !important;
+      }
+      .reference-header .nav-news:hover > .news-menu,
+      .reference-header .nav-news:focus-within > .news-menu {
+        display: grid;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateY(0);
+      }
+      .news-column:first-child {
+        border-right: 1px solid #aaa;
+        padding-right: 6px;
+      }
+      .news-column h3 {
+        margin: 0;
+        padding: 10px 16px;
+        background: #c40909;
+        color: #fff;
+        font: 700 13px/20px Arial,sans-serif;
+      }
+      .reference-header .news-menu a {
+        padding: 10px 20px;
+        border: 0;
+        white-space: normal;
+        font: 400 13px/20px Arial,sans-serif;
+        transition: background-color .3s ease !important;
+      }
+      @media(max-width:1100px) {
+        .reference-header .nav-news > .news-menu {
+          display: none;
+          position: static;
+          width: 100%;
+          transform: none;
+        }
+        .reference-header .nav-news:hover > .news-menu,
+        .reference-header .nav-news:focus-within > .news-menu {
+          display: grid;
+        }
+      }
+    </style>
+
+    <style>
+      @media (min-width: 1101px) {
+        .reference-header .nav-news > .news-menu {
+          right: -155px;
+        }
+      }
+
+      #events .event-prev::before {
+        transform: translate(3px, 6px) rotate(-135deg);
+      }
+
+      #events .event-next::before {
+        transform: translate(-2px, 5px) rotate(45deg);
+      }
+    </style>
+    
+  </head>
+  <body>
+    <a class="skip-link" href="#main">
+      Đi tới nội dung chính
+    </a>
+    <header class="site-header reference-header" id="top">
+      <div class="reference-brandbar">
+        <a class="reference-logo" href="#top">
+          <img src="assets/other/logo-soict.png" alt="Bách khoa Hà Nội - SoICT">
+        </a>
+        <div class="reference-school">
+          ĐẠI HỌC BÁCH KHOA HÀ NỘI
+          <br>
+          TRƯỜNG CÔNG NGHỆ THÔNG TIN VÀ TRUYỀN THÔNG
+        </div>
+        <div class="reference-tools">
+          <div class="reference-flags">
+          </div>
+          <form class="search-panel" role="search">
+            <label class="sr-only" for="site-search">
+              Tìm kiếm
+            </label>
+            <input id="site-search" type="search" placeholder="Search..." required>
+            <button class="search-toggle" type="submit" aria-label="Tìm kiếm">
+              <svg viewBox="0 0 24 24" height="20" aria-hidden="true">
+                <circle cx="10" cy="10" r="7" fill="none" stroke="currentColor" stroke-width="2.5"/>
+                <path d="m15 15 6 6" stroke="currentColor" stroke-width="2.5"/>
+              </svg>
+            </button>
+          </form>
+        </div>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+          <span>
+          </span>
+          <span>
+          </span>
+          <span>
+          </span>
+          <span class="sr-only">
+            Mở menu
+          </span>
+        </button>
+      </div>
+      <nav class="main-nav" id="main-nav" aria-label="Điều hướng chính">
+        <div class="nav-inner">
+          <div class="nav-item">
+            <a href="https://soict.hust.edu.vn/category/gioi-thieu">
+              Giới thiệu
+            </a>
+            <div class="nav-dropdown">
+              <a href="https://soict.hust.edu.vn/category/gioi-thieu">
+                Thông tin chung
+              </a>
+              <a href="https://soict.hust.edu.vn/triet-ly-giao-duc">
+                Triết lý giáo dục
+              </a>
+              <a href="https://soict.hust.edu.vn/co-cau-to-chuc.html">
+                Cơ cấu tổ chức
+              </a>
+            </div>
+          </div>
+          <div class="nav-item nav-departments">
+            <a href="#departments">
+              Khoa – Trung tâm
+            </a>
+            <div class="nav-dropdown departments-menu">
+              <div class="departments-column">
+                <h3>
+                  Khoa
+                </h3>
+                <a href="#departments">
+                  Khoa học máy tính
+                </a>
+                <a href="#departments">
+                  Kỹ thuật máy tính
+                </a>
+              </div>
+              <div class="departments-column">
+                <h3>
+                  Trung tâm
+                </h3>
+                <a href="#departments">
+                  Trung tâm Máy tính và Thực hành
+                </a>
+                <a href="#departments">
+                  Trung tâm Đổi mới sáng tạo (Innovation)
+                </a>
+                <a href="#departments">
+                  Trung tâm Nghiên cứu Quốc tế về Trí tuệ nhân tạo (BKAI)
+                </a>
+                <a href="#departments">
+                  Trung tâm An toàn – An ninh thông tin (BKCS)
+                </a>
+                <a href="#departments">
+                  Trung tâm Công nghệ và Giải pháp Chuyển đổi số trong Giáo dục (EdTech)
+                </a>
+                <a href="#departments">
+                  Trung tâm Nghiên cứu Quốc tế về Định vị sử dụng vệ tinh (NAVIS)
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="#education">
+              Đào tạo
+            </a>
+            <div class="nav-dropdown">
+              <a href="#education">
+                Hệ đại học
+              </a>
+              <a href="#education">
+                Hệ thạc sĩ
+              </a>
+              <a href="#education">
+                Hệ tiến sĩ
+              </a>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="#research">
+              Nghiên cứu
+            </a>
+            <div class="nav-dropdown">
+              <a href="#research">
+                Trung tâm nghiên cứu
+              </a>
+              <a href="#research">
+                Đề tài – Dự án
+              </a>
+              <a href="#research">
+                Công bố khoa học
+              </a>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="#education">
+              Tuyển sinh
+            </a>
+            <div class="nav-dropdown">
+              <a href="#education">
+                Thông tin tuyển sinh
+              </a>
+              <a href="#education">
+                Điểm chuẩn tham khảo
+              </a>
+              <a href="#education">
+                Hỏi đáp tuyển sinh
+              </a>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="#students">
+              Sinh viên
+            </a>
+            <div class="nav-dropdown">
+              <a href="#students">
+                Biểu mẫu và quy định
+              </a>
+              <a href="#students">
+                Cố vấn học tập
+              </a>
+              <a href="#students">
+                Câu lạc bộ sinh viên
+              </a>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="#cooperation">
+              Hợp tác đối ngoại
+            </a>
+            <div class="nav-dropdown">
+              <a href="#cooperation">
+                Hợp tác với khối hàn lâm
+              </a>
+              <a href="#cooperation">
+                Hợp tác với doanh nghiệp
+              </a>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="#alumni">
+              Cựu sinh viên
+            </a>
+            <div class="nav-dropdown">
+              <a href="#alumni">
+                Giới thiệu chung
+              </a>
+              <a href="#alumni">
+                Tấm gương cựu sinh viên
+              </a>
+            </div>
+          </div>
+          <div class="nav-item nav-news">
+            <a href="#news">
+              Tin tức – Sự kiện
+            </a>
+            <div class="nav-dropdown news-menu">
+              <div class="news-column">
+                <h3>
+                  Tin tức
+                </h3>
+                <a href="#news">
+                  Thông báo
+                </a>
+                <a href="#news">
+                  Tin bài
+                </a>
+              </div>
+              <div class="news-column">
+                <h3>
+                  Sự kiện
+                </h3>
+                <a href="#events">
+                  Sự kiện sắp diễn ra
+                </a>
+                <a href="#events">
+                  Sự kiện đã diễn ra
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="#">
+              Tuyển dụng
+            </a>
+            <div class="nav-dropdown">
+              <a href="https://soict.hust.edu.vn/tuyen-dung/viec-lam-tai-soict">
+                Việc làm tại SoICT
+              </a>
+              <a href="https://soict.hust.edu.vn/tuyen-dung/viec-lam-cho-sinh-vien">
+                Việc làm cho sinh viên
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="hero reference-hero" aria-label="Tin nổi bật">
+        <article class="hero-slide active" style="--hero-image: url('assets/banner/banner1.jpg')">
+          <div class="hero-overlay">
+          </div>
+          <div class="container hero-content">
+            <p class="eyebrow">
+              Sự kiện nổi bật
+            </p>
+            <h1>
+              Tổng kết Graduation Day 2026
+            </h1>
+            <p>
+              Trong 1 tuần lễ từ ngày 13/7 đến 17/7/2026, Trường đã tổ chức tổng cộng 66 hội đồng bảo vệ tốt nghiệp, chia theo 20 phân ban thuộc nhiều lĩnh vực chuyên môn khác nhau. Gần 1000 sinh viên đã hoàn thành phần bảo vệ đồ án tốt nghiệp, cột mốc quan trọng đánh dấu chặng đường cuối cùng trong hành trình học tập đại học.
+            </p>
+            <a class="button button-primary more-motion" href="https://soict.hust.edu.vn/4f6v">
+      <span class="more-label">
+        Xem thêm
+      </span>
+    </a>
+          </div>
+        </article>
+        <article class="hero-slide slide-genai" style="--hero-image: url('assets/banner/banner2.jpg')">
+          <div class="hero-overlay">
+          </div>
+          <div class="container hero-content">
+            <p class="eyebrow">
+              Đào tạo và nghiên cứu
+            </p>
+            <h1>
+              Chương trình kỹ sư chuyên sâu về AI tạo sinh
+            </h1>
+            <p>
+              Trường CNTT&TT giới thiệu chương trình đào tạo chuyên sâu về Generative AI, mở thêm hướng học tập và nghiên cứu cho kỹ sư công nghệ.
+            </p>
+            <a class="button button-primary more-motion" href="https://soict.hust.edu.vn/chuong-trinh-dao-tao-ky-su-chuyen-sau-dac-thu-tri-tue-nhan-tao-tao-sinh-chinh-thuc-ra-mat.html">
+      <span class="more-label">
+        Xem thêm
+      </span>
+    </a>
+          </div>
+        </article>
+        <article class="hero-slide slide-innovation" style="--hero-image: url('assets/banner/banner3.jpg')">
+          <div class="hero-overlay">
+          </div>
+          <div class="container hero-content">
+            <p class="eyebrow">
+              Sự kiện nổi bật
+            </p>
+            <p>
+              Ngày 28/03/2026, Innovation Day 2026 do trường CNTT&TT tổ chức đã diễn ra thành công, thu hút hơn 1.500 sinh viên tham dự cùng sự góp mặt của 33 doanh nghiệp trong lĩnh vực công nghệ thông tin, khẳng định sức hút mạnh mẽ của ngày hội kết nối sinh viên - doanh nghiệp
+            </p>
+            <a class="button button-primary more-motion" href="https://soict.hust.edu.vn/4cej">
+      <span class="more-label">
+        Xem thêm
+      </span>
+    </a>
+          </div>
+        </article>
+        <article class="hero-slide slide-admissions" style="--hero-image: url('assets/banner/banner4.png')">
+          <div class="hero-overlay">
+          </div>
+          <div class="container hero-content">
+            <p class="eyebrow">
+              Tuyển sinh
+            </p>
+            <h1>
+              Chuyên trang tuyển sinh
+            </h1>
+            <p>
+              Tìm hiểu ngành học, chương trình đào tạo và những thông tin cần thiết để đăng ký xét tuyển vào Trường.
+            </p>
+            <a class="button button-primary more-motion" href="https://soict.hust.edu.vn/tuyen-sinh">
+      <span class="more-label">
+        Xem thêm
+      </span>
+    </a>
+          </div>
+        </article>
+        <div class="hero-controls container">
+          <button class="hero-arrow prev" type="button" aria-label="Banner trước">
+            ‹
+          </button>
+          <div class="hero-dots" aria-label="Chọn banner">
+          </div>
+          <button class="hero-arrow next" type="button" aria-label="Banner sau">
+            ›
+          </button>
+        </div>
+      </section>
+      <section class="section" id="news">
+        <div class="container">
+          <h2 class="feed-title">
+            TIN MỚI NHẤT
+          </h2>
+          <div class="news-layout">
+            <article class="news-card">
+              <div class="news-picture">
+                <img src="assets/news/news1.jpg" alt="Việt Nam làm chủ chế tạo robot lặn biển điều khiển từ xa với sản phẩm nghiên cứu của Trường CNTT&TT, ĐHBK Hà Nội">
+                <span class="news-category">
+                  Tin bài
+                </span>
+              </div>
+              <h3>
+                <a href="https://soict.hust.edu.vn/category/tin-tuc">
+                  Việt Nam làm chủ chế tạo robot lặn biển điều khiển từ xa với sản phẩm nghiên cứu của Trường CNTT&TT, ĐHBK Hà Nội
+                </a>
+              </h3>
+              <p>
+                Khảo sát các công trình ngầm dưới biển từng là bài toán tốn kém khi Việt Nam phải phụ thuộc hoàn toàn...
+              </p>
+            </article>
+            <article class="news-card">
+              <div class="news-picture">
+                <img src="assets/news/news2.jpg" alt="Nhận hồ sơ và Bằng tốt nghiệp kỳ 2025.2">
+                <span class="news-category">
+                  Thông báo
+                </span>
+              </div>
+              <h3>
+                <a href="https://soict.hust.edu.vn/category/tin-tuc">
+                  Nhận hồ sơ và Bằng tốt nghiệp kỳ 2025.2
+                </a>
+              </h3>
+              <p>
+                THÔNG BÁO VỀ VIỆC TỔ CHỨC TRẢ HỒ SƠ VÀ BẰNG TỐT NGHIỆP CHO SINH VIÊN TRƯỜNG CNTT&TT KỲ 20252 Trong hai...
+              </p>
+            </article>
+            <article class="news-card">
+              <div class="news-picture">
+                <img src="assets/news/news3.png" alt="Chương trình thực tập cho Học viên cao học, Nghiên cứu sinh tại Viện Tin học Quốc gia Nhật Bản (NII) 2026 (đợt 2)">
+                <span class="news-category">
+                  Thông báo
+                </span>
+              </div>
+              <h3>
+                <a href="https://soict.hust.edu.vn/category/tin-tuc">
+                  Chương trình thực tập cho Học viên cao học, Nghiên cứu sinh tại Viện Tin học Quốc gia Nhật Bản (NII) 2026 (đợt 2)
+                </a>
+              </h3>
+              <p>
+                Trong khuôn khổ hợp tác với Trường Công nghệ thông tin và Truyền thông, Viện Tin học quốc gia Nhật Bản (NII)...
+              </p>
+            </article>
+            <article class="news-card">
+              <div class="news-picture">
+                <img src="assets/news/news4.jpg" alt="Ra mắt Trung tâm Giáo dục Apple tại Đại học Bách khoa Hà Nội">
+                <span class="news-category">
+                  Tin bài
+                </span>
+              </div>
+              <h3>
+                <a href="https://soict.hust.edu.vn/category/tin-tuc">
+                  Ra mắt Trung tâm Giáo dục Apple tại Đại học Bách khoa Hà Nội
+                </a>
+              </h3>
+              <p>
+                Ngày 27/8, Trung tâm Giáo dục của Apple, mô hình được vận hành hợp tác cùng Đại học Bách khoa Hà Nội,...
+              </p>
+            </article>
+          </div>
+        </div>
+        <a class="feed-more more-motion" href="https://soict.hust.edu.vn/category/tin-tuc">
+      <span class="more-label">
+        Xem thêm tin tức
+      </span>
+    </a>
+      </section>
+      <section class="section events-section" id="events">
+        <div class="container">
+          <h2 class="feed-title">
+            SỰ KIỆN MỚI NHẤT
+          </h2>
+          <div class="event-carousel">
+            <button class="event-prev" type="button" aria-label="Sự kiện trước">
+              ‹
+            </button>
+            <div class="event-viewport">
+              <div class="events-grid" id="event-track">
+              <article class="event-poster">
+                <a href="https://soict.hust.edu.vn/su-kien">
+                  <div class="event-photo">
+                    <img src="assets/event/event1.jpeg" alt="Seminar: Future-Ready Skills for an AI-Driven World">
+                    <div class="event-calendar">
+                      <strong>
+                        29
+                      </strong>
+                      <span>
+                        TH 09
+                      </span>
+                    </div>
+                  </div>
+                  <div class="event-details">
+                    <h3>
+                      Seminar: Future-Ready Skills for an AI-Driven World
+                    </h3>
+                    <p>
+                      Thời gian: 2:00 PM - 29/09/2026
+                    </p>
+                    <p title="Phòng 103, Nhà B1, Đại học Bách khoa Hà Nội">
+                      Địa điểm: Phòng 103, Nhà B1, Đại học Bách khoa Hà Nội
+                    </p>
+                  </div>
+                </a>
+              </article>
+              <article class="event-poster">
+                <a href="https://soict.hust.edu.vn/su-kien">
+                  <div class="event-photo">
+                    <img src="assets/event/event2.jpeg" alt="Physical AI: Active Inference, World Models, VLA, và Edge Computing">
+                    <div class="event-calendar">
+                      <strong>
+                        17
+                      </strong>
+                      <span>
+                        TH 08
+                      </span>
+                    </div>
+                  </div>
+                  <div class="event-details">
+                    <h3>
+                      Physical AI: Active Inference, World Models, VLA, và Edge Computing
+                    </h3>
+                    <p>
+                      Thời gian: 11:30 AM - 17/08/2026
+                    </p>
+                    <p title="Phòng 504, Nhà B1, Đại học Bách khoa Hà Nội">
+                      Địa điểm: Phòng 504, Nhà B1, Đại học Bách khoa Hà Nội
+                    </p>
+                  </div>
+                </a>
+              </article>
+              <article class="event-poster">
+                <a href="https://soict.hust.edu.vn/su-kien">
+                  <div class="event-photo">
+                    <img src="assets/event/event3.jpg" alt="Trường hè 2026 về Trí tuệ nhân tạo tại biên">
+                    <div class="event-calendar">
+                      <strong>
+                        03
+                      </strong>
+                      <span>
+                        TH 08
+                      </span>
+                    </div>
+                  </div>
+                  <div class="event-details">
+                    <h3>
+                      Trường hè 2026 về Trí tuệ nhân tạo tại biên
+                    </h3>
+                    <p>
+                      Thời gian: 8:00 AM - 03/08/2026
+                    </p>
+                    <p title="Nhà B1, Đại học Bách khoa Hà Nội">
+                      Địa điểm: Nhà B1, Đại học Bách khoa Hà Nội
+                    </p>
+                  </div>
+                </a>
+              </article>
+              <article class="event-poster">
+                <a href="https://soict.hust.edu.vn/su-kien">
+                  <div class="event-photo">
+                    <img src="assets/event/event4.jpg" alt="Vietnam AI Innovation Challenge 2026 UniTour">
+                    <div class="event-calendar">
+                      <strong>
+                        15
+                      </strong>
+                      <span>
+                        TH 07
+                      </span>
+                    </div>
+                  </div>
+                  <div class="event-details">
+                    <h3>
+                      Vietnam AI Innovation Challenge 2026 UniTour
+                    </h3>
+                    <p>
+                      Thời gian: 1:45 PM - 15/07/2026
+                    </p>
+                    <p title="Online trên Zoom và trực tiếp tại Trường CNTT&TT">
+                      Địa điểm: Online trên Zoom và trực tiếp tại Trường CNTT&TT
+                    </p>
+                  </div>
+                </a>
+              </article>
+            </div>
+            </div>
+            <button class="event-next" type="button" aria-label="Sự kiện tiếp theo">
+              ›
+            </button>
+          </div>
+        </div>
+        <a class="events-more more-motion" href="https://soict.hust.edu.vn/su-kien">
+      <span class="more-label">
+        Xem thêm sự kiện
+      </span>
+    </a>
+      </section>
+      <section class="section programs reference-section" id="education">
+        <div class="reference-container">
+          <div class="reference-heading">
+            <h2>
+              ĐÀO TẠO – TUYỂN SINH
+            </h2>
+            <p>
+              Năm 2022, Tổ chức Giáo dục Quacquarelli Symonds (viết tắt QS – Vương quốc Anh) đã đánh giá và xếp chất lượng đào tạo và nghiên cứu của ĐHBK Hà Nội trong các lĩnh vực mà Trường đang đảm nhận thuộc nhóm hạng từ 401 đến 450 trên toàn Thế giới, tiếp tục giữ vị trí số 1 tại Việt Nam.
+            </p>
+          </div>
+          <div class="reference-pair">
+            <article class="reference-card">
+              <img src="/assets/admissions/ctdt.jpg" alt="CHƯƠNG TRÌNH ĐÀO TẠO">
+              <div class="reference-card-copy">
+                <h3>
+                  CHƯƠNG TRÌNH ĐÀO TẠO
+                </h3>
+                <p>
+                  Trường hiện đang cung cấp hơn 20 chương trình đào tạo chất lượng cao thuộc 3 hệ đại học, ThS và TS; trong đó, có chương trình được thị trường lao động quốc tế đón nhận với hơn 60% sinh viên tốt nghiệp làm việc ở nước ngoài. Các chương trình đào tạo thuộc vào 3 nhóm ngành chính: Khoa học Máy tính, Kỹ thuật Máy tính, và Khoa học Dữ liệu và Trí tuệ Nhân tạo…
+                  <a href="#">
+                    (xem tiếp)
+                  </a>
+                </p>
+              </div>
+            </article>
+            <article class="reference-card">
+              <img src="/assets/admissions/kien_tao_tuong_lai_so.jpg" alt="KIẾN TẠO TƯƠNG LAI VỚI SoICT">
+              <div class="reference-card-copy">
+                <h3>
+                  KIẾN TẠO TƯƠNG LAI VỚI SoICT
+                </h3>
+                <p>
+                  Thương hiệu Kỹ sư CNTT Bách khoa đã vượt ra khỏi biên giới nước nhà, và ngày càng chứng minh được chất lượng trên trường Quốc tế. Trong làn sóng Chuyển đổi số, lựa chọn phát triển tương lai với SoICT sẽ đem lại cho các bạn cơ hội trở thành các chuyên gia công nghệ, có khả năng làm chủ và dẫn dắt sự phát triển KHCN nước nhà…
+                  <a href="#">
+                    (xem tiếp)
+                  </a>
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section partners reference-section" id="cooperation">
+        <div class="reference-container">
+          <div class="reference-heading">
+            <h2>
+              HỢP TÁC ĐỐI NGOẠI
+            </h2>
+            <p>
+              Trường CNTT&TT luôn coi trọng các hoạt động hợp tác quốc tế và hợp tác doanh nghiệp để nâng cao chất lượng các hoạt giảng dạy, nghiên cứu
+              <br>
+              và chuyển giao công nghệ.
+            </p>
+          </div>
+          <div class="reference-pair">
+            <article class="reference-card">
+              <img src="assets/corp/corp1.png" alt="CÁC TRƯỜNG ĐỐI TÁC">
+              <div class="reference-card-copy">
+                <h3>
+                  CÁC TRƯỜNG ĐỐI TÁC
+                </h3>
+                <p>
+                  Trường CNTT TT có quan hệ hợp tác với nhiều trường đại học và viện nghiên cứu uy tín trên Thế giới. Thông qua hợp tác, sinh viên của Trường có cơ hội học tập,
+                  nghiên cứu tại các trường đối tác thông qua các học bổng trao đổi sinh viên, cũng như các dự án hợp tác nghiên cứu. Trường hợp tác với các đại học lớn ở Châu Âu, Nhật Bản…
+                  để cung cấp cho sinh viên các chương trình đào tạo song bằng (double degree), một hình thức “du học” kinh tế và hiệu quả…
+                  <a href="https://soict.hust.edu.vn/hop-tac-quoc-te.html">
+                    (xem tiếp)
+                  </a>
+                </p>
+              </div>
+            </article>
+            <article class="reference-card">
+              <img src="assets/corp/corp2.jpg" alt="DOANH NGHIỆP ĐỐI TÁC">
+              <div class="reference-card-copy">
+                <h3>
+                  DOANH NGHIỆP ĐỐI TÁC
+                </h3>
+                <p>
+                  Đào tạo và nghiên cứu rất cần sự hợp tác thực chất với cộng đồng doanh nghiệp. Trường hiện đang duy trì hợp tác với mạng lưới gồm hơn 130 doanh nghiệp CNTT trong và ngoài nước, trong đó có thể kể tới HEDSPI Supporting Partner Network (HEDSPI-SPN), mạng lưới hỗ trợ sinh viên tăng cường ngoại ngữ, phát triển kỹ năng mềm, cũng như làm quen với văn hóa DN để gia tăng sức cạnh tranh trong thị trường lao động quốc tế…
+                  <a href="https://soict.hust.edu.vn/hop-tac-doanh-nghiep.html">
+                    (xem tiếp)
+                  </a>
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section alumni-section reference-section" id="alumni">
+        <div class="reference-container">
+          <div class="reference-heading">
+            <h2>
+              CỰU SINH VIÊN
+            </h2>
+          </div>
+          <div class="reference-alumni-carousel">
+            <button class="alumni-prev" type="button" aria-label="Cựu sinh viên trước">
+              ‹
+            </button>
+            <div class="reference-alumni-track">
+              <article class="reference-alumni-card">
+                <a href="#">
+                  <div class="reference-alumni-photo">
+                    <img src="assets/alumni/hoang_viet_anh.jpg" alt="Hoàng Việt Anh – Chỉ có một tình yêu duy nhất">
+                    <span>
+                      CỰU SINH VIÊN
+                    </span>
+                  </div>
+                  <div class="reference-alumni-copy">
+                    <h3>
+                      Hoàng Việt Anh – Chỉ có một tình yêu duy nhất
+                    </h3>
+                    <p>
+                      Gia nhập FPT năm 1993, từ khi còn là sinh viên năm 3 khoa CNTT ĐH Bách...
+                    </p>
+                  </div>
+                </a>
+              </article>
+              <article class="reference-alumni-card">
+                <a href="#">
+                  <div class="reference-alumni-photo">
+                    <img src="assets/alumni/lu_thanh_long.jpg" alt="Lữ Thành Long – Thủ lĩnh công nghệ">
+                    <span>
+                      CỰU SINH VIÊN
+                    </span>
+                  </div>
+                  <div class="reference-alumni-copy">
+                    <h3>
+                      Lữ Thành Long – Thủ lĩnh công nghệ
+                    </h3>
+                    <p>
+                      Nhắc đến ngôi trường đã gắn bó suốt 5 năm học đại học, doanh nhân Lữ Thành...
+                    </p>
+                  </div>
+                </a>
+              </article>
+              <article class="reference-alumni-card">
+                <a href="#">
+                  <div class="reference-alumni-photo">
+                    <img src="assets/alumni/nguyen_ha_dong.jpg" alt="Nguyễn Hà Đông – Cha đẻ Flappy Bird “náo loạn” Thế giới">
+                    <span>
+                      CỰU SINH VIÊN
+                    </span>
+                  </div>
+                  <div class="reference-alumni-copy">
+                    <h3>
+                      Nguyễn Hà Đông – Cha đẻ Flappy Bird “náo loạn” Thế giới
+                    </h3>
+                    <p>
+                      Tạp chí công nghệ Cnet của Mỹ công bố danh sách 25 ứng dụng có ảnh hưởng...
+                    </p>
+                  </div>
+                </a>
+              </article>
+              <article class="reference-alumni-card">
+                <a href="#">
+                  <div class="reference-alumni-photo">
+                    <img src="assets/alumni/hung_tran.jpg" alt="Hùng Trần – Tấm gương khởi nghiệp người Việt tại Silicon Valley">
+                    <span>
+                      CỰU SINH VIÊN
+                    </span>
+                  </div>
+                  <div class="reference-alumni-copy">
+                    <h3>
+                      Hùng Trần – Tấm gương khởi nghiệp người Việt tại Silicon Valley
+                    </h3>
+                    <p>
+                      “Gãi đúng chỗ ngứa” của người dùng Trần Việt Hùng cựu nghiên cứu sinh Quỹ Giáo...
+                    </p>
+                  </div>
+                </a>
+              </article>
+            </div>
+            <button class="alumni-next" type="button" aria-label="Cựu sinh viên tiếp theo">
+              ›
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="testimonial-section" aria-label="Nói về SoICT">
+        <div class="container testimonial-inner">
+          <h2>
+            NÓI VỀ SoICT
+          </h2>
+          <div class="testimonial-slides">
+            <article class="testimonial-slide">
+              <img class="testimonial-photo" src="assets/people/Kim_In_Soo.jpg" alt="Ông Kim In Soo">
+              <div class="testimonial-copy">
+                <blockquote tabindex="0" aria-label="Lời nhận xét của Ông Kim In Soo">
+                  Sinh viên Trường CNTT&TT không chỉ được biết đến với nền tảng kiến thức kỹ thuật sắc bén và sự thích ứng tuyệt vời với bất kỳ nhiệm vụ nào được giao, mà còn được đánh giá cao bởi tư duy phản biện và sáng tạo. Trong SVMC, sinh viên ĐHBK Hà Nội nói chung và sinh viên Trường CNTT&TT nói riêng luôn giữ các vị trí quan trọng, và trở thành thành viên chủ chốt trong nhiều dự án cốt lõi của Trung tâm. Trường và SVMC đã củng cố mối quan hệ bền chặt, được thể hiện thông qua văn bản hợp tác chính thức, mở đường cho các hoạt động tài trợ tăng cường năng lực, cũng như học bổng cho sinh viên. Hiện tại, hơn 25% nhân viên của SVMC đã tốt nghiệp từ ĐHBK Hà Nội, trong đó có Trường CNTT&TT, và chúng tôi luôn mong muốn gia tăng số lượng này. SVMC luôn đánh giá cao hiệu quả hợp tác với Trường CNTT&TT – một đối tác chiến lược toàn diện của SVMC tại Việt Nam.
+                </blockquote>
+                <div class="testimonial-author">
+                  <strong>
+                    Ông Kim In Soo
+                  </strong>
+                  <p>
+                    Tổng Giám đốc Trung tâm Nghiên cứu và Phát triển Điện thoại Di động Samsung Việt Nam (SVMC)
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="testimonial-slide" hidden>
+              <img class="testimonial-photo" src="assets/people/lu_thanh_long.jpg" alt="Ông Lữ Thành Long – Chủ tịch MISA">
+              <div class="testimonial-copy">
+                <blockquote tabindex="0" aria-label="Lời nhận xét của Ông Lữ Thành Long – Chủ tịch MISA">
+                  Thật sự biết ơn các thế hệ thầy cô đang ngày đêm dạy dỗ để cung cấp cho xã hội các kỹ sư: Năng lực tốt – Cần mẫn làm việc – Đam mê sáng tạo, đây là những tố chất quan trọng nhất của những người muốn sáng tạo và thay đổi thế giới. Với tư cách là một cựu sinh viên, một nhà tuyển dụng, tôi luôn muốn quy tụ vào Công ty MISA các kỹ sư CNTT Bách khoa để cùng nhau sáng tạo ra nhiều sản phẩm hữu ích góp phần vào sự phát triển của đất nước và thay đổi thế giới.
+                </blockquote>
+                <div class="testimonial-author">
+                  <strong>
+                    Ông Lữ Thành Long – Chủ tịch MISA
+                  </strong>
+                  <p>
+                    Cựu Sinh viên K31
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="testimonial-slide" hidden>
+              <img class="testimonial-photo" src="assets/people/Alexandra_Devlin.png" alt="Alexandra Devlin">
+              <div class="testimonial-copy">
+                <blockquote tabindex="0">
+                  Nếu bạn muốn được thử thách, Viện CNTT&TT – ĐHBK Hà Nội là nơi dành cho bạn. Bạn sẽ không chỉ bị thách thức bởi chương trình giảng dạy mà còn bởi tài năng của các sinh viên, môi trường học tập cởi mở và những cơ hội khám phá, trải nghiệm rộng lớn bên ngoài lớp học. Tôi sẽ luôn giới thiệu Viện CNTT&TT cho các sinh viên quốc tế, đặc biệt những người muốn trải nghiệm một môi trường học tập mới mẻ, cũng như trân trọng sự đa dạng trong văn hóa.
+                </blockquote>
+                <div class="testimonial-author">
+                  <strong>
+                    Alexandra Devlin
+                  </strong>
+                  <p>
+                    Sinh viên trao đổi từ Đại học Công nghệ Sydney (UTS, Úc)
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="testimonial-slide" hidden>
+              <img class="testimonial-photo" src="assets/people/Tran_Viet_Hung.jpg" alt="TS. Trần Việt Hùng – Nhà sáng lập GotIT (Silicon Valley)">
+              <div class="testimonial-copy">
+                <blockquote tabindex="0">
+                  Nếu bạn muốn có một thời sinh viên nhàn nhã thì đừng bao giờ nghĩ tới SoICT! Bạn sẽ phải học hành cực kỳ chăm chỉ, phải hy sinh nhiều sở thích cá nhân, phải thức đêm để hoàn thành các khoá học và các project từ chương trình đào tạo rất nặng. Tuy nhiên khi bạn vượt qua được chặng đường đầy gian nan này, bạn có cơ hội tham gia vào mạng lưới cựu sinh viên đã tạo ra danh tiếng cho SoICT không chỉ ở Việt nam như các giáo sư ở đại học danh tiếng Mỹ, các nhà khoa học ở NASA, các kỹ sư phần mềm ở những tập đoàn công nghệ khổng lồ, các doanh nhân
+                </blockquote>
+                <div class="testimonial-author">
+                  <strong>
+                    TS. Trần Việt Hùng – Nhà sáng lập GotIT (Silicon Valley)
+                  </strong>
+                  <p>
+                    Cựu Sinh viên K42
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="testimonial-slide" hidden>
+              <img class="testimonial-photo" src="assets/people/James_Cremer.jpg" alt="Giáo sư James Cremer">
+              <div class="testimonial-copy">
+                <blockquote tabindex="0">
+                  Tôi đã đến trao đổi hợp tác Viện CNTT – ĐHBK Hà Nội nhiều lần, và dành hai học kỳ giảng dạy tại Chương trình Global ICT của Viện. Tôi đặc biệt ấn tượng với tài năng của các em sinh viên, cũng như sự nỗ lực của họ để nắm bắt các kiến thức công nghệ tiên tiến, hướng tới một tương lai tươi sáng trong các lĩnh vực công nghệ mũi nhọn. BLĐ Viện và các giảng viên luôn cởi mở chào đón mỗi lần tôi đến công tác, và thể hiện mong muốn tăng cường hợp tác trong đào tạo và nghiên cứu khoa học, nhằm đáp ứng nhu cầu phát triển của Việt Nam trong Thế kỷ 21.
+                </blockquote>
+                <div class="testimonial-author">
+                  <strong>
+                    Giáo sư James Cremer
+                  </strong>
+                  <p>
+                    Nguyên Trưởng khoa Khoa học Máy tính, Đại học Iowa (Hoa Kỳ).
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="testimonial-dots" aria-label="Chọn nhận xét">
+            <button type="button" class="active" aria-label="Xem nhận xét 1" aria-pressed="true">
+            </button>
+            <button type="button" aria-label="Xem nhận xét 2" aria-pressed="false">
+            </button>
+            <button type="button" aria-label="Xem nhận xét 3" aria-pressed="false">
+            </button>
+            <button type="button" aria-label="Xem nhận xét 4" aria-pressed="false">
+            </button>
+            <button type="button" aria-label="Xem nhận xét 5" aria-pressed="false">
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="stats" id="about" aria-labelledby="about-heading">
+        <div class="about-inner">
+          <h2 id="about-heading">
+            VỀ CHÚNG TÔI
+          </h2>
+          <div class="about-grid">
+            <div class="about-item">
+              <h3>
+                QS ranking 2023
+              </h3>
+              <strong>
+                450 – 500
+              </strong>
+              <p>
+                trên Thế giới trong nhóm
+                <br>
+                ngành Khoa học Máy tính và
+                <br>
+                Hệ thống Thông tin
+              </p>
+            </div>
+            <div class="about-item">
+              <h3>
+                Sinh viên thuộc TOP
+              </h3>
+              <strong>
+                1%
+              </strong>
+              <p>
+                điểm cao nhất Khối A Toàn quốc
+              </p>
+            </div>
+            <div class="about-item">
+              <h3>
+                Sinh viên
+              </h3>
+              <strong>
+                6.000+
+              </strong>
+            </div>
+            <div class="about-item">
+              <h3>
+                Chương trình đào tạo
+              </h3>
+              <strong>
+                17+
+              </strong>
+              <p>
+                thuộc các hệ đào tạo cử nhân, kỹ sư, thạc sỹ
+                <br>
+                khoa học, tiến sỹ
+              </p>
+            </div>
+            <div class="about-item">
+              <h3>
+                Đối tác
+              </h3>
+              <strong>
+                500+
+              </strong>
+              <p>
+                các trường đại học, viện
+                <br>
+                nghiên cứu, tập đoàn, công
+                <br>
+                ty trong nước và quốc tế
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section video-section">
+        <div class="container">
+          <div class="center-heading">
+            <h2>
+              Video
+            </h2>
+          </div>
+          <div class="video-grid">
+            <article>
+              <div class="video-cover" data-video="https://www.youtube.com/watch?v=thTvii4LuqQ">
+                <img src="assets/video/vd1.jpg" alt="Tuần lễ tốt nghiệp">
+                <span class="video-title">
+                  INNOVATION DAY 2026
+                </span>
+                <button type="button" aria-label="Phát video">
+                  ▶
+                </button>
+              </div>
+            </article>
+            <article>
+              <div class="video-cover" data-video="https://www.youtube.com/watch?v=vKsPGm-LLZc">
+                <img src="assets/video/vd2.jpg" alt="Ngày hội đổi mới sáng tạo">
+                <span class="video-title">
+                  TUẦN LỄ KỶ NIỆM 30 NĂM THÀNH LẬP TRƯỜNG CNTT&TT, ĐHBK HÀ NỘI
+                </span>
+                <button type="button" aria-label="Phát video">
+                  ▶
+                </button>
+              </div>
+            </article>
+            <article>
+              <div class="video-cover" data-video="https://www.youtube.com/watch?v=pBD9LLEHrlY">
+                <img src="assets/video/vd3.jpg" alt="Chương trình hợp tác quốc tế">
+                <span class="video-title">
+                  GIỚI THIỆU CHƯƠNG TRÌNH ĐÀO TẠO CNTT VIỆT-NHẬT
+                </span>
+                <button type="button" aria-label="Phát video">
+                  ▶
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <a class="reference-video-more more-motion" href="#">
+      <span class="more-label">
+        Xem thêm video
+      </span>
+    </a>
+    <footer class="site-footer reference-footer" id="contact">
+      <div class="reference-container">
+        <div class="reference-footer-grid">
+          <div id="departments">
+            <h3>
+              CÁC ĐƠN VỊ
+            </h3>
+            <a href="#">
+              Khoa Khoa học Máy tính
+            </a>
+            <a href="#">
+              Khoa Kỹ thuật Máy tính
+            </a>
+            <a href="#">
+              Văn phòng Trường
+            </a>
+            <a href="#">
+              Trung tâm Máy tính và Thực hành
+            </a>
+            <a href="#">
+              Trung tâm Đổi mới Sáng tạo
+            </a>
+            <a href="#">
+              Trung tâm Công nghệ và Giải pháp Chuyển đổi số trong Giáo dục (EdTech)
+            </a>
+            <a href="#">
+              Trung tâm An toàn – An ninh thông tin (BKCS)
+            </a>
+            <a href="#">
+              Trung tâm Quốc tế Nghiên cứu và Phát triển Công nghệ định vị sử dụng vệ tinh (NAVIS)
+            </a>
+            <a href="#">
+              Trung tâm Nghiên cứu Quốc tế về Trí tuệ nhân tạo (BK.AI)
+            </a>
+          </div>
+          <div>
+            <h3>
+              CHƯƠNG TRÌNH ĐÀO TẠO
+            </h3>
+            <a href="#">
+              Hệ đại học
+            </a>
+            <a href="#">
+              Hệ thạc sỹ
+            </a>
+            <a href="#">
+              Hệ tiến sỹ
+            </a>
+          </div>
+          <div id="students">
+            <h3>
+              HỆ THỐNG VÀ TÀI NGUYÊN
+            </h3>
+            <a href="#">
+              Hệ thống Quản lý Đào tạo
+            </a>
+            <a href="#">
+              Hệ thống Quản lý Hợp tác Doanh nghiệp
+            </a>
+            <a href="#">
+              Các mẫu biểu dành cho sinh viên
+            </a>
+          </div>
+          <div class="reference-footer-contact">
+            <img class="reference-footer-logo" src="assets/other/soict-light-logo-300x66.png" alt="SoICT">
+            <p>
+              ☎ (+84) 24 3869 2463
+            </p>
+            <p>
+              ✉ vp@soict.hust.edu.vn
+            </p>
+            <p>
+              <i>
+                Văn phòng Trường CNTT&TT
+              </i>
+              <br>
+              Phòng 505, Nhà B1,
+              <br>
+              Đại học Bách khoa Hà Nội
+            </p>
+            <div class="reference-socials">
+              <a href="https://www.facebook.com/SoictOfficially/" aria-label="Facebook" target="_blank">
+                f
+              </a>
+              <a href="https://www.youtube.com/channel/UCAXzF2QEKCwhEcTjJSAu1Yw/feed" aria-label="YouTube" target="_blank">
+                ▶
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="reference-copyright">
+          Copyright ©
+          <b>
+            Trường Công nghệ Thông tin và Truyền thông
+          </b>
+        </div>
+      </div>
+      <a class="reference-back-top" href="#top" aria-label="Lên đầu trang">
+        ⌃
+      </a>
+    </footer>
+    <script src="main.js">
+    </script>
+  </body>
+</html>
