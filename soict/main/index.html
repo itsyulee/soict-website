@@ -97,7 +97,19 @@
           .reference-hero .hero-slide:not(:first-child) .confetti-layer {
             display: none !important;
           }
-        
+    
+          .reference-hero .hero-arrow span {
+              display: inline-block;
+            }
+
+            .reference-hero .hero-arrow.prev span {
+              transform: translate(-1px, -1px);
+            }
+
+            .reference-hero .hero-arrow.next span {
+              transform: translate(1px, -1px);
+            }
+          
     </style>
     <style id="header-reference-styles">
       .reference-header, .reference-hero { font-family: Arial, Helvetica, sans-serif; }
@@ -1452,12 +1464,12 @@
         </article>
         <div class="hero-controls container">
           <button class="hero-arrow prev" type="button" aria-label="Banner trước">
-            ‹
+            <span>‹</span>
           </button>
           <div class="hero-dots" aria-label="Chọn banner">
           </div>
           <button class="hero-arrow next" type="button" aria-label="Banner sau">
-            ›
+            <span>›</span>
           </button>
         </div>
       </section>
